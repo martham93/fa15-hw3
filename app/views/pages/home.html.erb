@@ -1,0 +1,24 @@
+<div>
+	<h1>Hello!</h1>
+	<%= @user.name + @user.email + @user.age.to_s %>
+	<h1></h1>
+	<%= "Number of todos: " + @todos.size.to_s %>
+	<% @todos.each do |todo| %>
+		<p>
+			<span><%= todo.tasks %></span>
+			<span><%= todo.finished.to_s %></span>
+		</p>
+	<% end %> 
+	<h1></h1>
+	<%= @cat %>
+	<h1></h1>
+	<%= @test %>
+
+	<% @cats.each do |cat| %>
+		<p>
+			<span><%= cat.name %></span>
+<!-- 			<span><%= cat.meow %></span> -->
+		</p>
+	<% end %> 
+
+</div>
